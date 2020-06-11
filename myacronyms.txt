@@ -5,3 +5,5 @@
 #
 # Example:
 #   MIA:Missing In Action
+CSC:Commandable SAL Component
+TSTN: Telescope and Site Technical Note
