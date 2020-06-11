@@ -5,6 +5,7 @@
 % Package imports go here.
 
 % Local commands go here.
+\newcommand{\tns}{T\&S\,}
 
 %If you want glossaries
 %\input{aglossary.tex}
@@ -16,7 +17,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Leanne Guy
+Leanne Guy and Patrick Ingraham
 }
 
 \setDocRef{TSTN-021}
@@ -28,7 +29,9 @@ Leanne Guy
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-A key component in the transitions from construction, commissioning and through to operations is the delivery of a suite of cross-subsystem user-level documentation that will be used by both commissioning and operations-era observatory staff. With the rapid commissioning of systems and early observing activities now underway, capturing high-level system usage information, lessons learnt, and having an area to host reference content while performing integration activities is essential. 
+A key component in the transitions from construction, commissioning and through to operations is the delivery of a suite of cross-subsystem user-level documentation, which will be used by both commissioning and operations-era observatory staff. With the rapid commissioning of systems and early observing activities now underway, capturing high-level system usage information, lessons learnt, and having an area to host reference content while performing integration activities is essential. 
+
+This document provides the charge to the working group tasked with ensuring that documentation work essential to commissioning activities is delivered. 
 }
 
 % Change history defined here.
@@ -36,11 +39,12 @@ A key component in the transitions from construction, commissioning and through 
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Leanne Guy}
+  \addtohist{1}{2020-06-13}{First draft.}{Leanne Guy}
 }
 
 
 \begin{document}
+
 
 % Create the title page.
 \maketitle
@@ -49,6 +53,52 @@ A key component in the transitions from construction, commissioning and through 
 
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
+
+
+\section{Motivation}
+
+Commissioning is now well underway and necessary documentation and documentation organization is inadequate and is hindering commissioning activities. Documentation of commissioning activities needs to be captured, used and iteratively improved in near real-time throughout commissioning. A larger  project commissioned working group is currently getting underway with the goal to define the structure, process and content of the construction deliverable documentation. This group is being formed to ensure that documentation work essential to commissioning activities now continues until the project commissioned working group delivers a plan. 
+
+\section{Scope}
+This group's work is to provide an interim framework to enable the production of coherent and unified documentation of ongoing development and commissioning activities. Examples include: software documentation of CSC, lessons learnt from Rubin Auxiliary Telescope and Commissioning Camera commissioning activities. This group will adopt the Data Management (DM) Sphinx documentation framework as the interim documentation framework to facilitate this activity of the provisioning of content for user-level documentation related to the operations of the observatory. This framework has been selected because we believe it is a strong candidate for the project-wide framework. However, we fully expect that all documentation developed in this manner will be easily migratable to whatever global solution is proposed and developed by the project commissioned working group. 
+
+\section{Composition}
+
+\textbf{Leadership}: 
+\begin{itemize}
+\item Andy Clements:  T\&S Software Manager
+\item Leanne Guy: Rubin Operations AD of System Performance, which includes System Documentation
+\item  Patrick Ingraham: Commissioning team member, \tns calibration systems engineer, AuxTel and Calibration control software product owner
+\end{itemize}
+
+\textbf{Engineers}: 
+\begin{itemize}
+\item Eric Coughlin:  \tns Developer
+\item Andrew Heyer: \tns Developer
+\item Matthew Rumore: Rubin Operations System Documentation Lead, and responsible for ensuring that solutions developed as part of this activity will transition smoothly into Operations. 
+\end{itemize}
+
+\section{Deliverables}
+\begin{itemize}
+\item Put in place a platform, based on the lsst.pipelines.io implementation to enable the contribution of relevant documentation by developers, product owners, and users.
+\item Develop structure in CSC repositories (in github) to include and deliver documentation with their code.
+\item Provide an indexable and searchable knowledge base that will serve as a starting point for information by the greater commissioning team, observers, and future observatory staff until an observatory-wide solution is implemented. 
+\end{itemize}
+Deliverables are to be organized such that they may be one of the options considered during the selection process of the long-term documentation strategy for operations.
+
+\section{Aspects considered out-of-scope} 
+This working group is limited to Rubin created user-level documentation and does not attempt to solve the many other documentation challenges including:
+\begin{itemize}
+\item Providing a platform for the organization of vendor supplied code, products and documents.
+\item Providing any sort of authentication and authorization functionality, e.g password/access management tooling. All information is fully public
+\item Duplicating any content of change controlled documents,  any documents in docushare or other locations that are relevant should be linked.
+\item Reorganization of existing documentation (especially in docushare). In some specific cases, moving content from confluence may be appropriate.
+\item Building a new framework - the Sphinx system is highly appropriate to this work and will be used. 
+\end{itemize}
+
+\section{Timeline}
+Working group dissolves upon completion of the deliverables or upon a decision on a global solution developed by the project commissioned working group. 
+
 
 \appendix
 % Include all the relevant bib files.
@@ -62,8 +112,6 @@ A key component in the transitions from construction, commissioning and through 
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
-
-
 
 
 
